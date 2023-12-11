@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
+
+:root {
+  --font-family-def: "Manrope", sans-serif;
+  --font-size-quote: 1.75rem;
+
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: var(--font-family-def);
+  background-color: var(--Dark-Blue);
+}
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.container {
+  position: relative;
+  max-width: 500px;
+  background-color: var(--Dark-Grayish-Blue);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  box-shadow: 5px 12px 35px 0px rgba(0, 0, 0, 0.52);
+}
+.container .advice-number {
+  color: var(--Neon-Green);
+  font-size: 0.8rem;
+  letter-spacing: 1.4px;
+}
+.container .advice {
+  color: var(--Light-Cyan);
+  text-align: center;
+}
+.container > picture {
+  margin-bottom: 30px;
+}
+.container > img:last-child {
+  box-shadow: 0 0 0 10px var(--Neon-Green);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -10px;
+  cursor: pointer;
+}
+.attribution {
+  text-align: center;
+  color: var(--Light-Cyan);
+}
+.attribution > a {
+  color: var(--Neon-Green);
+}
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+}
