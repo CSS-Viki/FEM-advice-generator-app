@@ -1,6 +1,6 @@
 const adviceIndex = document.getElementById("advice-index");
 const advice = document.getElementById("new-advice");
-const dice = document.getElementById("dice");
+const dice = document.querySelector(".dice-icon");
 
 //Using a random parameter to bust cache each request
 let API_URL = "https://api.adviceslip.com/advice?random=" + Math.random();

@@ -64,12 +64,20 @@ main {
 .container > picture {
   margin-bottom: 30px;
 }
-.container > img:last-child {
-  box-shadow: 0 0 0 10px var(--Neon-Green);
-  border-radius: 50%;
+.dice-icon {
   position: absolute;
-  bottom: -10px;
+  bottom: -24px;
+  padding: 1rem;
+  background-color: var(--Neon-Green);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.dice-icon:hover {
+  box-shadow: 0 0 20px var(--Neon-Green);
 }
 .attribution {
   text-align: center;
